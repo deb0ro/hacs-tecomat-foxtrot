@@ -1,0 +1,30 @@
+set_variable:
+  name: Set PLC Variable
+  description: Set a variable in the Foxtrot PLC.
+  fields:
+    variable:
+      name: Variable
+      description: The name of the variable to set.
+      example: "test_1"
+      required: true
+      selector:
+        text:
+    value:
+      name: Value
+      description: The value to set the variable to.
+      example: "123"
+      required: true
+      selector:
+        text:
+
+get_file:
+  name: Get PLC File
+  description: Retrieve a file from the Foxtrot PLC.
+  fields:
+    filename:
+      name: Filename
+      description: The path to the file in the PLC.
+      example: "//www/TEST.TXT"
+      required: true
+      selector:
+        text:

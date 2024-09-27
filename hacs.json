@@ -1,0 +1,6 @@
+{
+  "name": "Foxtrot PLC",
+  "render_readme": true,
+  "domains": ["sensor", "binary_sensor"],
+  "iot_class": "local_polling"
+}

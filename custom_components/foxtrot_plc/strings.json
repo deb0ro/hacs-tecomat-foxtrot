@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "plc_ip": "PLC IP Address",
+          "plc_port": "PLCComS Port",
+          "scan_interval": "Scan Interval (seconds)",
+          "variable_prefixes": "Variable Prefixes (comma-separated for multiple)",
+          "ignore_zero": "Ignore zero or empty values"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Scan Interval (seconds)",
+          "variable_prefixes": "Variable Prefixes (comma-separated for multiple)",
+          "ignore_zero": "Ignore zero or empty values"
+        }
+      }
+    }
+  }
+}
