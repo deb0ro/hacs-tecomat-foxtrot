@@ -6,8 +6,10 @@
           "plc_ip": "PLC IP Address",
           "plc_port": "PLCComS Port",
           "scan_interval": "Scan Interval (seconds)",
-          "variable_prefixes": "Variable Prefixes (comma-separated for multiple)",
-          "ignore_zero": "Ignore zero or empty values"
+          "variable_prefixes": "Variable Prefixes to Include (comma-separated for multiple)",
+          "exclude_variable_prefixes": "Variable Prefixes to Exclude (comma-separated for multiple)",
+          "log_level": "Log Level",
+          "detailed_logging": "Enable Detailed Logging"
         }
       }
     },
@@ -25,10 +27,29 @@
       "init": {
         "data": {
           "scan_interval": "Scan Interval (seconds)",
-          "variable_prefixes": "Variable Prefixes (comma-separated for multiple)",
-          "ignore_zero": "Ignore zero or empty values"
+          "variable_prefixes": "Variable Prefixes to Include (comma-separated for multiple)",
+          "exclude_variable_prefixes": "Variable Prefixes to Exclude (comma-separated for multiple)",
+          "ignore_zero": "Ignore zero or empty values",
+          "log_level": "Log Level",
+          "detailed_logging": "Enable Detailed Logging"
         }
       }
+    }
+  },
+  "selector": {
+    "log_level": {
+      "options": {
+        "debug": "Debug",
+        "info": "Info",
+        "warning": "Warning",
+        "error": "Error"
+      }
+    }
+  },
+  "services": {
+    "get_diagnostics": {
+      "name": "Get Diagnostics",
+      "description": "Retrieve diagnostic information for the Foxtrot PLC integration."
     }
   }
 }
